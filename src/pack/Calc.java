@@ -27,6 +27,27 @@ public class Calc {
 	}
 	
 	
+	public static void Dan_dist_100km() {
+		/*  Модификатор доступа public означает, что метод виден и доступен любому классу.
+	    static означает, что не нужно создавать экземпляр(копию) объекта Rasch в памяти, чтобы использовать этот метод.
+	    void означает, что метод не возвращает данных в программу, которая его вызвала.
+	    Метод с пустыми скобками, это означает, что метод не имеет аргументов(параметров)   */
+		if (Distance100km.CB_how_1==1){ // если выбран первый способ на вкладке На 100 км
+		double_probeg_do = Double.parseDouble(Distance100km.TextField_probeg_do.getText());
+		double_probeg_next = Double.parseDouble(Distance100km.TextField_probeg_next.getText());
+		double_volume = Double.parseDouble(Distance100km.TextField_volume.getText());  /* В переменную  
+		записываются данные введеные пользователем в текстовое поле которое расположено в файле Distance.
+		Преобразование данных в тип integer. */
+		
+		} else { // если выбран второй способ на вкладке На 100 км
+		double_fuel = Double.parseDouble(Distance100km.TextField_fuel.getText());
+		double_pass_dist = Double.parseDouble(Distance100km.TextField_pass_dist.getText());  /* В переменную  
+		записываются данные введеные пользователем в текстовое поле которое расположено в файле Distance.
+		Преобразование данных в тип integer. */
+		}
+	}
+	
+	
 	
 	
 	
